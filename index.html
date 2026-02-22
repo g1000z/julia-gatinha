@@ -1,130 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Bem ✨</title>
+<title>relatório oficial sobre você</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=playfair+display:wght@700&family=inter:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-    background: linear-gradient(135deg, #0f0f14, #1a1a22);
-    color: #f2f2f2;
-    font-family: 'Inter', sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background:#ffffff;
+    font-family:'inter', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:#111;
 }
 
-.container {
-    text-align: center;
-    max-width: 600px;
-    padding: 40px;
+.card {
+    max-width:750px;
+    padding:80px 60px;
+    text-align:center;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-family:'playfair display', serif;
+    font-size:3rem;
+    margin-bottom:25px;
+    text-transform: lowercase;
 }
 
 .subtitle {
-    font-size: 1.1rem;
-    color: #bdbdd7;
-    margin-bottom: 30px;
+    font-size:1.1rem;
+    color:#555;
+    margin-bottom:50px;
+    line-height:1.6;
 }
 
-.button {
-    background: transparent;
-    border: 1px solid #5c6cff;
-    color: #5c6cff;
-    padding: 12px 28px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: 0.3s;
+button {
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:16px 36px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:0.95rem;
+    transition:0.3s;
+    text-transform: lowercase;
 }
 
-.button:hover {
-    background: #5c6cff;
-    color: white;
+button:hover { opacity:0.8; }
+
+.hidden {
+    display:none;
+    margin-top:60px;
+    animation:fade 1s ease forwards;
 }
 
-.hidden-message {
-    margin-top: 30px;
-    font-size: 1rem;
-    color: #d4d4ff;
-    display: none;
-    line-height: 1.6;
+.message {
+    font-size:1.05rem;
+    line-height:1.9;
+    margin-bottom:35px;
 }
 
-.gif-container {
-    margin-top: 25px;
-}
-
-.gif-container img {
-    width: 240px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+.gif-box img {
+    width:280px;
+    border-radius:18px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
 
 .caption {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin-top: 10px;
+    margin-top:15px;
+    font-size:0.9rem;
+    color:#777;
 }
 
 .footer {
-    position: absolute;
-    bottom: 20px;
-    font-size: 0.8rem;
-    color: #888;
+    margin-top:70px;
+    font-size:0.8rem;
+    color:#bbb;
+}
+
+@keyframes fade {
+    from {opacity:0; transform:translateY(15px);}
+    to {opacity:1; transform:translateY(0);}
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Meu bem.</h1>
+<div class="card">
 
-    <p class="subtitle">
-        Você falou isso uma vez.<br>
-        E eu levei meio a sério… talvez inteiro.
-    </p>
+<h1>relatório confidencial.</h1>
 
-    <button class="button" onclick="mostrarMensagem()">
-        Clica aqui, mas só se for curiosa 👀
-    </button>
+<div class="subtitle">
+assunto: você.<br>
+consequência: eu completamente desestabilizado.
+</div>
 
-    <div class="hidden-message" id="mensagem">
-        A distância é meio injusta, eu sei.<br><br>
-        Mas aparentemente eu fico assim quando você fala comigo:
-        
-        <div class="gif-container">
-            <img src="jester-entertaining-princess-jester-dancing.gif" alt="Eu perto de você">
-            <div class="caption">
-                Basicamente eu quando você fala "meu bem".
-            </div>
-        </div>
+<button onclick="mostrar()">abrir documento sob risco emocional</button>
 
-        <br>
-        Não é falta de postura.<br>
-        É excesso de efeito colateral seu 😌
-    </div>
+<div class="hidden" id="conteudo">
+
+<div class="message">
+primeiro de tudo:<br>
+a foto com o rosto borrado.<br><br>
+você achou que tava sendo misteriosa.<br>
+eu fiquei 12 minutos ampliando a imagem como se fosse agente da cia tentando identificar um suspeito internacional.
+</div>
+
+<div class="message">
+segundo ponto extremamente importante:<br>
+suas unhas curtas ficaram absurdamente melhores.<br>
+tem energia de ponto turístico.<br>
+minimalistas. elegantes. impactantes.<br>
+tipo “menos é mais”, mas aplicado à minha estabilidade emocional.
+</div>
+
+<div class="message">
+terceiro ponto crítico:<br>
+a sua voz.<br><br>
+eu não estava preparado.<br>
+aquilo não foi uma voz normal.<br>
+aquilo foi um evento climático.<br><br>
+eu genuinamente fiquei em silêncio depois.<br>
+e sim…<br>
+eu ainda sonho com uma ligação inesperada sua como se fosse final de filme.
+</div>
+
+<div class="message">
+prova visual de como eu fico perto de você:
+</div>
+
+<div class="gif-box">
+<img src="jester-entertaining-princess-jester-dancing.gif">
+<div class="caption">
+eu tentando manter dignidade depois de ouvir "meu bem".
+</div>
+</div>
+
+<div class="message" style="margin-top:45px;">
+se eu sou o bobo da corte,<br>
+você claramente é a realeza absoluta.<br><br>
+e honestamente?<br>
+eu estou aceitando o cargo com entusiasmo preocupante.
+</div>
+
+<div class="message">
+aguardando futura ligação.<br>
+atenciosamente,<br>
+o indivíduo emocionalmente afetado.
+</div>
+
 </div>
 
 <div class="footer">
-    Feito com risco emocional calculado.
+documento oficialmente exagerado, mas perigosamente sincero.
+</div>
+
 </div>
 
 <script>
-function mostrarMensagem() {
-    document.getElementById("mensagem").style.display = "block";
+function mostrar(){
+document.getElementById("conteudo").style.display="block";
 }
 </script>
 
